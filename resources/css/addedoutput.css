@@ -1,0 +1,13 @@
+* {
+    color: #FFFFFF;
+}
+.cstma {
+    transition: 0.3s ease-out;
+}
+.cstma:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-out;
+}
+.cstmdbgc {
+    background-color: #030e22;
+}

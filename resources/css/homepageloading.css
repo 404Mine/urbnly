@@ -1,0 +1,74 @@
+/* 
+   This CSS only covers the loading animation for the homepage
+   It'll only happen for first time visits or reloading the page
+*/
+
+/* Loading Animation */
+.loading {
+    position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+    background-color: #0b0e14;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+
+    animation: fadeOut 2s ease-out;
+    -webkit-animation: fadeOut 2s ease-out;
+    -o-animation: fadeOut 2s ease-out;
+    -moz-animation: fadeout 2s ease-out;
+    animation-fill-mode: forwards;
+
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+@-moz-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+@-o-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}

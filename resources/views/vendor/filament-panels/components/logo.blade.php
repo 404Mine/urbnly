@@ -1,0 +1,1 @@
+<img src="{{ asset('/storage/urbnlylogotransparent.webp') }}" alt="Logo" class="h-10">

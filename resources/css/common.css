@@ -1,0 +1,438 @@
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Base <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #0b0e14;
+    color: #f9f9f9;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul, ol {
+    list-style: none;
+}
+img, .no-drag{
+    user-drag: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+}
+p {
+    letter-spacing: 0.2em;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    font-weight: 100;
+}
+.page {
+    height: 100vh;
+    width: 100%;
+}
+/*                                  Homepage                              */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Header Contents <<<<<<<<<<<<<<<<<<<<<<< */
+.ctheader {
+    position: fixed;
+}
+header {
+    height: 70px;
+    width: 100%;
+    top: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    margin-top: 5px;
+    stroke: #5b72f1;
+    fill: #ffffff;
+    transition: all .2s ease-in-out;
+}
+.logo:hover {
+    fill: #0074f2;
+    transition: all .2s ease-in-out;
+}
+.menubutton {
+    all: unset;
+    cursor: pointer;
+}
+.menu {
+    fill: #ffffff;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Covers <<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.cover {
+    width: 1920px;
+    height: 400px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Main <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.homepagebackground {
+    background-color: rgba(3, 65, 252, 0.200);
+    background-blend-mode: darken;
+    background-image: url('/public/storage/samplebg4.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.contents {
+    padding-top: 70px;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Navigation <<<<<<<<<<<<<<<<<<<<<<<<<< */
+nav {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+}
+nav li, .contact_menu li {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Roboto Mono', 'Monsterrat', sans-serif;
+
+}
+/* >>>>>>>>>>>>>>>>>>>>>> Hover Effect for Nav Child <<<<<<<<<<<<<<<<<<<< */
+nav ul:hover li, .menu_nav ul:hover li {
+    color: #707070;
+    opacity: 0.8;
+    transition: .2s ease-in-out;
+}
+nav ul li:hover, .menu_nav ul li:hover {
+    color: #f9f9f9;
+    opacity: 1;
+    filter: drop-shadow(0px 0px 10px #909090)
+    drop-shadow(0px 0px 5px #909090);
+    transition: .2s ease-in-out;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Concept <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.concept {
+    align-items: center;
+    display: flex;
+}
+.concept_left, .concept_right {
+    padding: 100px;
+    width: 50%;
+}
+.concept_left {
+    text-align: left;
+}
+.concept_right {
+    text-align: center;
+}
+.concept_right p, .concept_left p {
+    margin-top: 40px;
+    line-height: 2.0;
+}
+.concept .concept_left h1 {
+    letter-spacing: 0.2em;
+    font-family: 'Arial';
+    font-size: 25px;
+    font-weight: 300;
+}
+.concept_right h2{
+    background-image: #ffffff;
+    background-image: linear-gradient(100deg, #ffffff, #147ff1);
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -o-background-clip: text;
+    -o-background-text-fill-color: transparent;
+    filter: drop-shadow(0px 0px 15px #0074f280)
+    drop-shadow(0px 0px 20px #0074f24c);
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-weight: 1000;
+    font-size: 100px;
+}
+/*                                 Contactpage                            */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Main <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.contact h1, .contact_dev .center_part h2 {
+    letter-spacing: 0.1em;
+    font-family: 'Arial';
+    font-weight: 300;
+    font-size: 35px;
+    margin: 30px 0px;
+}
+.contact .contact_group {
+    margin: 50px 0px;
+    text-align: center;
+}
+.contact .contact_group a {
+    font-family: 'Roboto Mono';
+    color: #f9f9f9;
+    text-decoration: underline;
+}
+.contact nav {
+    position: fixed;
+    top: 45%;
+}
+.contact header {
+    position: fixed;
+}
+.contact_menu, .menu {
+    display: none;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Devs <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.contact_dev {
+    display: flex;
+}
+.contact_dev .center_part {
+    
+    width: 50vw;
+    margin: auto auto auto 25vw;
+    padding: 20px;
+    text-align: center;
+}
+.contact_dev .center_part #msgdev input,
+.contact_dev .center_part #msgdev textarea {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: #808080;
+    border-style: ridge;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 10px;
+    margin: 20px 0px;
+    font-size: 12px;
+}
+.contact_dev .center_part #msgdev #subject {
+    margin: 100px 0px 20px 0px;
+}
+.contact_dev .center_part .formgroup .buttoncontainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.contact_dev .center_part .formgroup .buttoncontainer button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    min-width: 92px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px ridge #0074f2;
+    background-color: #0074f2;
+    color: #ffffff;
+    cursor: pointer;
+    overflow: hidden;
+}
+.contact_dev .center_part .formgroup .buttoncontainer img {
+    width: auto;
+    height: 20px;
+    margin: 0px 5px;
+    pointer-events: none;
+}
+.contact_dev .center_part .formgroup button:active {
+    transform: scale(0.9);
+    border: 1.3px ridge #ffffff;
+}
+.contact_dev .vl {
+    background-color: #606060;
+    width: 1.3px;
+    height: 70vh;
+    margin: auto 0px auto auto;
+}
+.contact_dev .devprofiles {
+    width: 20vw;
+    margin: auto 0px auto 0px;
+    align-items: flex-start;
+}
+.contact_dev .devprofiles .profile {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+}
+.contact_dev .devprofiles .profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+    pointer-events: visible;
+}
+.contact_dev .devprofiles .profile .profdetails {
+    margin: 0px 30px;
+}
+.contact_dev .devprofiles .profile .profdetails #subtext {
+    font-size: 9px;
+    font-weight: 100;
+    color: #a2a2a2;
+}
+.contact_dev .devprofiles .profile:hover {
+    background-color: #1F2838;
+}
+.contact_dev .devprofiles .profile:active {
+    background-color: #1F2838;
+}
+/*                         Responsive Styling Adjustments                 */
+/* ------------------------------- Landscapes --------------------------- */
+@media only screen and (max-width: 1366px) {
+    .concept_left, .concept_right {
+        padding: 30px;
+    }
+    .loading img {
+        width: 1824px;
+        height: 1026px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    /* Homepage Responsive Start */
+    .loading img {
+        min-width: 1920px;
+    }
+    .concept_left, .concept_right {
+        padding: 50px;
+    }
+    /* Homepage Responsive End */
+    /* Contactpage Responsive Start */
+    .contact nav {
+        display: none;
+    }
+    .show, .menu {
+        display: block;
+    }
+    .contact_menu {
+        position: fixed;
+        top: 0;
+        background-color: #0b0e14;
+        background-color: #0b0e14e6;
+    }
+    .contact_menu .menu_nav {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contact_menu .menu_nav li {
+        margin: 100px 0px;
+    }
+    .contact_dev .vl {
+        background-color: #606060;
+        width: 1.3px;
+        height: 60%;
+        margin: auto 0px auto auto;
+    }
+    .contact_dev .center_part {
+        width: 100%;
+        margin: auto 20px;
+        padding: 20px;
+        text-align: center;
+    }
+    .contact_dev .devprofiles {
+        width: 40%;
+        height: 40vh;
+        margin: auto 0px auto 0px;
+        align-items: flex-start;
+    }
+    .contact_dev .devprofiles .profile {
+        padding: 20px 20px;
+        display: flex;
+        align-items: center;
+    }
+}
+/* --------------------------------- Tablets ---------------------------- */
+@media only screen and (max-width: 768px) {
+    /* Homepage Responsive Start */
+    .loading img {
+        min-width: 1280px;
+    }
+    .concept {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .concept_left, .concept_right {
+        display: block;
+        width: 100vw;
+        padding: 0px 20px 0px 20px;
+    }
+    .concept_right p, .concept_left p {
+        margin-top: 20px;
+        line-height: 2.0;
+        font-size: 12px;
+    }
+    .concept_right h2 {
+        font-weight: 100;
+        font-size: 100px;
+    }
+    /* Homepage Responsive End */
+    /* Contactpage Responsive Start */
+    .contact .contact_group {
+        width: 100%;
+    }
+    .contact_menu .menu_nav li {
+        margin: 50px 0px;
+    }
+    .contact_dev .devprofiles {
+        width: 45%;
+        height: 40vh;
+        margin: auto 0px auto 0px;
+        align-items: flex-start;
+    }
+    .contact_dev .devprofiles .profile {
+        padding: 20px 20px;
+        display: flex;
+        align-items: center;
+    }
+    /* Contactpage Responsive End */
+}
+
+/* ----------------------------- Usually Phones ------------------------- */
+@media only screen and (max-width: 720px) {
+    /* Homepage Responsive Start */
+    .loading img {
+        min-width: 950px;
+    }
+    nav {
+        position: absolute;
+        top: 70%;
+        left: 2%;
+    }
+    /* Homepage Responsive End */
+    /* Contactpage Responsive Start */
+    .contact_menu .menu_nav li {
+        margin: 50px 0px;
+    }
+    .contact .contact_group {
+        margin: 30px 0px;
+    }
+    .contact .contact_group p, .contact .contact_group a {
+        font-size: 12px;
+        letter-spacing: normal;
+    }
+    .contact_dev {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact_dev .devprofiles {
+        width: 100%;
+    }
+    /* Contactpage Responsive End */
+}
